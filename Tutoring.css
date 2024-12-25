@@ -21,8 +21,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  margin-top: 1.2rem;
+  margin-top: 2.4rem;
   animation: fadeIn 1s ease;
+  height: 10vh;
 }
 .header__nav {
   border: 2px solid white;
@@ -94,12 +95,110 @@ body {
 .section__hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 12.8rem;
+  gap: 3.2rem;
   padding: 0 6rem;
   align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+
+  height: 85vh;
 }
 .stats__box--text {
   color: white;
+}
+.hero__img--box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  height: 60%;
+  background: #324975;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 2rem;
+}
+.hero__img--box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 103%;
+  height: 103%;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.hero__img--box:hover::after {
+  transform: rotate(90deg) scaleX(1.43) scaleY(0.73);
+}
+.hero__img--box:hover .hero__img {
+  transform: translateY(-2rem) rotate(0deg);
+  transition: all 0.8s ease;
+}
+.hero__img--box:hover .profile__heading {
+  opacity: 1;
+  transition: all 0.8s ease;
+  transform: translateY(0rem);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 1);
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.hero__img {
+  padding: 2rem;
+  height: 48rem;
+  rotate: -3deg;
+  transition: all 0.8s ease;
+}
+.profile__heading {
+  opacity: 0;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: #9fccd6;
+  transform: translateY(2rem);
+  transition: all 0.8s ease;
+}
+.hero__text--box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-self: start;
+  margin-top: 6.4rem;
+}
+.hero__text--heading {
+  color: #40c9ff;
+  font-size: 9.6rem;
+  line-height: 1.1;
+}
+.hero__text--info {
+  font-size: 1.6rem;
+  color: #9fccd6;
+  line-height: 1.4;
+}
+.stats {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.stats__box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.stats__box--text {
+  color: #484847;
+  font-size: 1.8rem;
+}
+.stats__text--highlight {
+  font-size: 3.2rem;
+  color: white;
+}
+.hero__icon--box {
+  font-size: 7.2rem;
+  color: #40c9ff;
 }
 /* ANIMATION & KEYFRAMES ////////////////////////////////////////////////////////////////////////////////////////////// */
 @keyframes fadeIn {
