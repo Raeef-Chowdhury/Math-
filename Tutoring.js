@@ -14,3 +14,25 @@ btnClose.addEventListener("click", function () {
   btnOpen.style.display = "block";
   btnClose.style.display = "none";
 });
+
+// ///////////////////////////////////////////////////////
+/// Scrolling for line
+const aboutSection = document.querySelector(".section__about");
+const lineStandard = document.querySelector(".img__line--box--2");
+const lineScrolled = document.querySelector(".img__line--box--1");
+const heroSection = document.querySelector(".section__hero");
+
+window.addEventListener("scroll", function () {
+  const sectionHero = heroSection.clientHeight;
+  const scroll = window.scrollY - sectionHero;
+  const scrollPercentage = Math.trunc(scroll / 10 + 5);
+
+  const abs = (lineScrolled.style.height = scrollPercentage + "%");
+  if (scrollPercentage > 2) {
+    lineScrolled.style.zIndex = "-1";
+  }
+
+  console.log(abs);
+
+  console.log(scrollPercentage);
+});
