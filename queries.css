@@ -47,7 +47,7 @@
     background-color: white;
     z-index: 20;
     opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
   }
   .nav__list--item {
     color: black;
@@ -88,6 +88,10 @@
   .hero__img--box:hover::after {
     transform: scale(1);
   }
+  .hero__img--box:hover .hero__img {
+    transform: translateY(0rem) rotate(0deg);
+    transition: all 0.8s ease;
+  }
   .hero__img--box:hover .profile__heading {
     opacity: 1;
     transition: all 0.8s ease;
@@ -105,8 +109,8 @@
     opacity: 1;
     font-size: 2.4rem;
     padding: 2rem;
+    transform: translateY(0rem);
     color: #9fccd6;
-    transform: translateY(-2rem);
     transition: all 0.8s ease;
   }
   .mobile__nav--icon {
@@ -115,11 +119,12 @@
 }
 @media (max-width: 544px) {
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   .section__hero {
-    margin-top: -10rem;
+    margin-top: 0rem;
     max-width: 400px;
+    margin-left: 10rem;
   }
   .hero__text--heading {
     font-size: 6rem;
@@ -129,5 +134,8 @@
   }
   .mobile__nav--icon {
     left: 80%;
+  }
+  .hero__img {
+    height: 24rem;
   }
 }
