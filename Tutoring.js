@@ -23,13 +23,17 @@ const lineScrolled = document.querySelector(".img__line--box--1");
 const heroSection = document.querySelector(".section__hero");
 
 window.addEventListener("scroll", function () {
+  let lineLength = lineStandard.offsetHeight;
   const sectionHero = heroSection.clientHeight;
   const scroll = window.scrollY - sectionHero;
-  const scrollPercentage = Math.trunc(scroll / 10 + 5);
+  let scrollPercentage = Math.trunc(scroll / 10 + 5);
 
   const abs = (lineScrolled.style.height = scrollPercentage + "%");
   if (scrollPercentage > 2) {
     lineScrolled.style.zIndex = "-1";
+  }
+  if (lineScrolled.offsetHeight > lineLength) {
+    lineScrolled.style.height = "85%";
   }
 
   console.log(abs);

@@ -176,3 +176,20 @@
     margin-top: 16rem;
   }
 }
+@media (max-width: 400px) {
+  .img__line--box--1,
+  .img__line--box--2 {
+    height: 85%;
+    left: 10%;
+    top: 5%;
+  }
+  .about__path--information {
+    font-size: 0.8rem;
+  }
+  .about__path--heading {
+    font-size: 1.6rem;
+  }
+  .about__path--career {
+    font-size: 1.2rem;
+  }
+}
