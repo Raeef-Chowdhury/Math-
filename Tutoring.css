@@ -229,6 +229,48 @@ body {
   font-size: 7.2rem;
   color: #40c9ff;
 }
+/* SECTION ABOUT////////////////////////////////////////////////////////////////////////////////////////////// */
+.section {
+  margin: 12rem 0 2rem 0;
+  padding: 0 12rem;
+}
+.section__heading {
+  margin: 0 auto;
+  font-size: 7.2rem;
+  /* color: #324975; */
+  color: #40c9ff;
+  position: relative;
+  width: fit-content;
+  transition: all 0.8s ease;
+}
+.section__heading::after {
+  transition: all 0.8s ease;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: -3;
+  top: 55%;
+  left: 1%;
+  background: #324975;
+  width: 0%;
+  height: 40%;
+}
+.section__heading:hover::after {
+  opacity: 1;
+  width: 94%;
+}
+
+.about__path {
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+  margin-top: 4.8rem;
+}
+.about__path--career {
+  gap: 3.2rem;
+  display: flex;
+  align-items: center;
+}
 /* ANIMATION & KEYFRAMES ////////////////////////////////////////////////////////////////////////////////////////////// */
 @keyframes fadeIn {
   0% {
