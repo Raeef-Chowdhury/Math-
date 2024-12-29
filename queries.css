@@ -163,6 +163,7 @@
     border-radius: 100rem;
     padding: 2rem;
   }
+
   .img__line--box--1,
   .img__line--box--2 {
     height: 80%;
@@ -183,6 +184,7 @@
     left: 25%;
     top: 2%;
   }
+
   .about__path--information {
     font-size: 0.8rem;
   }
