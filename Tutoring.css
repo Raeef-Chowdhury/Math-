@@ -235,7 +235,9 @@ body {
   padding: 0 12rem;
 }
 .section__heading {
-  margin: 0 auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
   font-size: 7.2rem;
   /* color: #324975; */
   color: #40c9ff;
