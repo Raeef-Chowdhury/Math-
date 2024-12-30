@@ -40,3 +40,22 @@ window.addEventListener("scroll", function () {
 
   console.log(scrollPercentage);
 });
+///////////////////////////////////////////////////////////////
+/// PRICING TOGGLE
+const priceElements = document.querySelectorAll(".pricing__card--price");
+const prices = [300, 1000, 500];
+
+const pricingBtn = document.querySelector(".toggle-input");
+
+// Event listener for the toggle button
+pricingBtn.addEventListener("click", function () {
+  priceElements.forEach((element, index) => {
+    // Update the price text based on the toggle button's state
+    if (pricingBtn.checked) {
+      element.textContent = `$${prices[index] * 10}`; // 10x increase
+    } else {
+      element.textContent = `$${prices[index]}`; // Original price
+    }
+    console.log(element, index);
+  });
+});
