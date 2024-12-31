@@ -82,6 +82,13 @@
   .mobile__nav--icon {
     left: 102rem;
   }
+  .pricing__cards {
+    display: block;
+    align-content: start;
+  }
+  .pricing__card {
+    margin-bottom: 7.2rem;
+  }
   .section__hero {
     display: flex;
     flex-direction: column;
