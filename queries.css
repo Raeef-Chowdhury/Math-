@@ -73,6 +73,7 @@
   }
   .section__heading:hover::after {
     width: 0%;
+    display: none;
   }
 }
 @media (max-width: 780px) {
