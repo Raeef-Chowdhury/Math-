@@ -83,6 +83,14 @@
   .mobile__nav--icon {
     left: 102rem;
   }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12rem 0 2rem 0;
+    padding: 0 12rem;
+    flex-direction: column;
+  }
   .pricing__cards {
     display: block;
     align-content: start;
