@@ -25,7 +25,7 @@
           <a class="nav__list--item" href="#about">ABOUT</a>
           <a class="nav__list--item" href="#qualifications">QUALIFICATIONS</a>
           <a class="nav__list--item" href="#pricing">PRICING</a>
-          <a class="nav__list--item">Sign UP</a>
+          <a class="nav__list--item" href="#form">Sign UP</a>
         </ul>
       </nav>
       <div class="cta__box">
@@ -381,19 +381,16 @@
           </div>
         </div>
       </section>
-      <section class="section section__form mt-large">
+      <section class="section section__form mt-large" id="form">
         <h1 class="section__heading">REGISTER NOW</h1>
         <div class="form__card">
-          <input
-            type="checkbox"
-            id="chk"
-            class="form__checkbox"
-            aria-hidden="true"
-          />
+          <input type="checkbox" id="chk" aria-hidden="true" />
 
           <div class="signup">
-            <form class="signup__form">
-              <label for="chk" aria-hidden="true">Sign up</label>
+            <form>
+              <label for="chk" class="form__label" aria-hidden="true"
+                >Sign up</label
+              >
               <input
                 type="text"
                 name="txt"
@@ -418,13 +415,13 @@
                 placeholder="Password"
                 required=""
               />
-              <button>Sign up</button>
+              <button class="form__button">Sign up</button>
             </form>
           </div>
 
           <div class="login">
-            <form class="login__form">
-              <label for="chk" aria-hidden="true" class="login__heading"
+            <form>
+              <label for="chk" class="form__label" aria-hidden="true"
                 >Login</label
               >
               <input
@@ -439,12 +436,23 @@
                 placeholder="Password"
                 required=""
               />
-              <button>Login</button>
+              <button class="form__button">Login</button>
             </form>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <img
+          alt="MATH++ Logo"
+          src="Images/Screenshot_2024-12-24_222233-removebg-preview.png"
+          class="footer__img"
+          srcset=""
+        />
+        <p>&copy; 2024 Math++. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
   <script
     type="module"

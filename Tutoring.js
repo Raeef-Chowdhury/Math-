@@ -1,5 +1,3 @@
-import { animate } from "motion";
-
 const btnOpen = document.querySelector(".nav__icon--open");
 const btnClose = document.querySelector(".nav__icon--close");
 const header = document.querySelector(".header__nav");
@@ -61,7 +59,3 @@ pricingBtn.addEventListener("click", function () {
     console.log(element, index);
   });
 });
-//////////////////////////////////////////////////////////////
-//////// FRAMER MOTION
-
-animate(".section", { opacity: 1, rotate: 90 }, { duration: 0.6 });
